@@ -1,0 +1,24 @@
+//State styles
+
+/* Small **********************************************************/
+@media screen and (min-width: $break-small) {
+
+}
+
+/* Medium *********************************************************/
+@media screen and (min-width: $break-medium) {
+  .feature-tall {
+    height: 99rem; // magic numbery to account for gutters
+  }
+  .feature-short {
+    height: 48rem;
+  }
+  .feature-wide {
+    height: 48rem;
+  }
+}
+
+/* Large **********************************************************/
+@media screen and (min-width: $break-large) {
+  
+}

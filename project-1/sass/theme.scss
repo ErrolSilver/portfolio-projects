@@ -1,0 +1,24 @@
+// Breakpoints
+$break-small: 768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+$blue: #4072b9;
+$white: #fff;
+$black: #000;
+
+// Fonts
+
+
+// Imports
+@import "base"; // Defaults
+@import "modules"; // Structure of blocks
+@import "layout"; // Where the blocks are placed
+@import "state"; // What the blocks look like in different states
+
+.design-credit {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 9999;
+}

@@ -1,0 +1,132 @@
+//Module styles
+body {
+  background: $blue;
+}
+
+.logo {
+  background: $blue;
+  color: $white;
+  display: inline-block;
+  height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  width: 15%;
+
+  &:hover {
+    background: $blue;
+    color: $white;
+    text-decoration: underline;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+}
+
+.site-title-bar {
+  background: $white;
+  box-shadow: 0 0 30px #333;
+  height: 8rem;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+
+  .container {
+    padding-right: 0;
+  }
+
+  nav {
+    float: right;
+    height: 100%;
+    padding-top: 2.5rem;
+    width: 85%;
+  }
+}
+
+.site-nav {
+  display: inline-block;
+
+  ul {
+    height: 100%;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    width: 16%;
+    
+    &:after {
+      content: '~';
+      float: right;
+    }
+
+    a {
+      color: $black;
+      font-weight: bold;
+
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  li:nth-child(5),
+  li:last-child {    
+
+    &:after {
+      content: '';
+      float: none;
+    }
+  }
+}
+
+.banner {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  h1,
+  h2 {
+    display: inline-block;
+  }
+
+  h1 {
+    background: #999;
+    background: rgba(0, 0, 0, .2);
+    border: 1px solid $white;
+    color: $white;
+    font-size: 9.6rem;
+    padding: 8%;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    background: $white;
+    border-top: 5px solid $blue;
+    color: $blue;
+    display: inline-block;
+    font-size: 2.1rem;
+    margin: 0;
+    padding: 1.5%;
+    position: relative;
+    top: -50px;
+    width: 33%;
+  }
+}
+
+.feature-wide {
+  margin-top: 30px; // to match bootstrap gutters
+}
