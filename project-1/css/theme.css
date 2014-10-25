@@ -223,36 +223,79 @@ body {
   margin-top: 30px;
 }
 
-/* line 3, ../sass/_layout.scss */
-.feature {
-  padding-right: 0;
+/* line 134, ../sass/_modules.scss */
+.site-footer {
+  background: #dedadb;
+  float: left;
+  margin-top: 8rem;
+  width: 100%;
 }
-
-/* line 7, ../sass/_layout.scss */
-.feature-sidebar {
-  padding-left: 0;
+/* line 140, ../sass/_modules.scss */
+.site-footer .logo-contain {
+  border-top: 3px solid #cea35f;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 20%;
+  top: -45px;
+}
+/* line 148, ../sass/_modules.scss */
+.site-footer .logo-contain .logo {
+  border: 10px solid white;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+/* line 155, ../sass/_modules.scss */
+.site-footer .site-nav {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 160, ../sass/_modules.scss */
+.site-footer .site-nav ul {
+  width: 100%;
+}
+/* line 163, ../sass/_modules.scss */
+.site-footer .site-nav ul li {
+  width: 20%;
 }
 
 /* Small **********************************************************/
 /* Medium *********************************************************/
 @media screen and (min-width: 992px) {
   /* line 10, ../sass/_state.scss */
+  .feature {
+    padding-right: 0;
+  }
+
+  /* line 14, ../sass/_state.scss */
+  .feature-sidebar {
+    padding-left: 0;
+  }
+
+  /* line 18, ../sass/_state.scss */
   .feature-tall {
     height: 99rem;
   }
 
-  /* line 13, ../sass/_state.scss */
+  /* line 22, ../sass/_state.scss */
   .feature-short {
     height: 48rem;
   }
 
-  /* line 16, ../sass/_state.scss */
+  /* line 26, ../sass/_state.scss */
   .feature-wide {
     height: 48rem;
   }
+
+  /* line 30, ../sass/_state.scss */
+  .site-footer {
+    height: 24rem;
+  }
 }
 /* Large **********************************************************/
-/* line 19, ../sass/theme.scss */
+/* line 20, ../sass/theme.scss */
 .design-credit {
   position: absolute;
   right: 0px;

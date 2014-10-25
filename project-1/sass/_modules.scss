@@ -130,3 +130,39 @@ body {
 .feature-wide {
   margin-top: 30px; // to match bootstrap gutters
 }
+
+.site-footer {
+  background: #dedadb;
+  float: left;
+  margin-top: 8rem;
+  width: 100%;
+
+  .logo-contain {
+    border-top: 3px solid $gold;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 20%;
+    top: -45px;
+    
+    .logo {
+      border: 10px solid $white;
+      display: block;
+      margin: 0 auto;
+      width: auto;
+    }
+  }
+  .site-nav {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      
+      li {
+        width: 20%;
+      }
+    }
+  }
+}
