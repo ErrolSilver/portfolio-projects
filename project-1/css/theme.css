@@ -77,22 +77,35 @@ h6 {
   overflow: hidden;
 }
 
-/* line 67, ../sass/_base.scss */
-.feature-short {
-  background: white;
-}
-
-/* line 71, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 .feature-wide {
   background: white;
 }
 
 /* line 2, ../sass/_modules.scss */
 body {
-  background: #4072b9;
+  background: #815167;
+  /* Old browsers */
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #815167), color-stop(40%, #555168), color-stop(100%, #27334d));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #815167 0%, #555168 40%, #27334d 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 12+ */
+  /* IE10+ */
+  background: -webkit-radial-gradient(center, ellipse, #815167 0%, #555168 40%, #27334d 100%);
+  background: radial-gradient(ellipse at center, #815167 0%, #555168 40%, #27334d 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#815167', endColorstr='#27334d',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 6, ../sass/_modules.scss */
+/* line 13, ../sass/_modules.scss */
+.col-md-12 {
+  float: left;
+}
+
+/* line 17, ../sass/_modules.scss */
 .logo {
   background: #4072b9;
   color: white;
@@ -102,18 +115,18 @@ body {
   text-align: center;
   width: 15%;
 }
-/* line 15, ../sass/_modules.scss */
+/* line 26, ../sass/_modules.scss */
 .logo:hover {
   background: #4072b9;
   color: white;
   text-decoration: underline;
 }
-/* line 21, ../sass/_modules.scss */
+/* line 32, ../sass/_modules.scss */
 .logo h1 {
   display: inline-block;
 }
 
-/* line 26, ../sass/_modules.scss */
+/* line 37, ../sass/_modules.scss */
 .site-title-bar {
   background: white;
   -webkit-box-shadow: 0 0 30px #333;
@@ -126,11 +139,12 @@ body {
   width: 100%;
   z-index: 9000;
 }
-/* line 37, ../sass/_modules.scss */
+/* line 48, ../sass/_modules.scss */
 .site-title-bar .container {
-  padding-right: 0;
+  padding-left: 7px;
+  padding-right: 7px;
 }
-/* line 41, ../sass/_modules.scss */
+/* line 53, ../sass/_modules.scss */
 .site-title-bar nav {
   float: right;
   height: 100%;
@@ -138,62 +152,62 @@ body {
   width: 85%;
 }
 
-/* line 49, ../sass/_modules.scss */
+/* line 61, ../sass/_modules.scss */
 .site-nav {
   display: inline-block;
 }
-/* line 52, ../sass/_modules.scss */
+/* line 64, ../sass/_modules.scss */
 .site-nav ul {
   height: 100%;
   padding: 0;
 }
-/* line 57, ../sass/_modules.scss */
+/* line 69, ../sass/_modules.scss */
 .site-nav li {
   display: inline-block;
   height: 100%;
   text-align: center;
   width: 16%;
 }
-/* line 63, ../sass/_modules.scss */
+/* line 75, ../sass/_modules.scss */
 .site-nav li:after {
   content: '~';
   float: right;
 }
-/* line 68, ../sass/_modules.scss */
+/* line 80, ../sass/_modules.scss */
 .site-nav li a {
   color: black;
   font-weight: bold;
 }
-/* line 74, ../sass/_modules.scss */
+/* line 86, ../sass/_modules.scss */
 .site-nav li input {
   width: 100%;
 }
-/* line 82, ../sass/_modules.scss */
+/* line 94, ../sass/_modules.scss */
 .site-nav li:nth-child(5):after,
 .site-nav li:last-child:after {
   content: '';
   float: none;
 }
 
-/* line 89, ../sass/_modules.scss */
+/* line 101, ../sass/_modules.scss */
 .banner {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-/* line 95, ../sass/_modules.scss */
+/* line 107, ../sass/_modules.scss */
 .banner-content {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 101, ../sass/_modules.scss */
+/* line 113, ../sass/_modules.scss */
 .banner-content h1,
 .banner-content h2 {
   display: inline-block;
 }
-/* line 105, ../sass/_modules.scss */
+/* line 117, ../sass/_modules.scss */
 .banner-content h1 {
   background: #999;
   background: rgba(0, 0, 0, 0.2);
@@ -204,7 +218,7 @@ body {
   width: 100%;
   text-transform: uppercase;
 }
-/* line 116, ../sass/_modules.scss */
+/* line 128, ../sass/_modules.scss */
 .banner-content h2 {
   background: white;
   border-top: 5px solid #4072b9;
@@ -218,45 +232,111 @@ body {
   width: 33%;
 }
 
-/* line 130, ../sass/_modules.scss */
+/* line 142, ../sass/_modules.scss */
+.feature-tall {
+  width: 100%;
+}
+
+/* line 147, ../sass/_modules.scss */
+.feature-short {
+  font-size: 90%;
+  position: relative;
+  width: 100%;
+}
+/* line 152, ../sass/_modules.scss */
+.feature-short .feature-short_header {
+  background: white;
+  float: left;
+  padding: 2rem 2.75rem 0;
+  width: 100%;
+}
+/* line 158, ../sass/_modules.scss */
+.feature-short .feature-short_header p {
+  margin: 0;
+}
+/* line 162, ../sass/_modules.scss */
+.feature-short .feature-short_header h1 {
+  margin: 1rem 0;
+}
+/* line 167, ../sass/_modules.scss */
+.feature-short .feature-short_content {
+  background: white;
+  height: 53%;
+  padding: 0 2.75rem;
+}
+/* line 172, ../sass/_modules.scss */
+.feature-short .feature-short_content p:last-child {
+  margin-bottom: 0;
+}
+/* line 177, ../sass/_modules.scss */
+.feature-short .feature-short_link {
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #606060), color-stop(57%, rgba(187, 187, 187, 0.17)), color-stop(100%, rgba(255, 255, 255, 0.17)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #606060 0%, rgba(187, 187, 187, 0.17) 57%, rgba(255, 255, 255, 0.17) 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(#606060), color-stop(57%, rgba(187, 187, 187, 0.17)), to(rgba(255, 255, 255, 0.17)));
+  background: linear-gradient(to bottom, #606060 0%, rgba(187, 187, 187, 0.17) 57%, rgba(255, 255, 255, 0.17) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#606060', endColorstr='#2bffffff',GradientType=0 );
+  /* IE6-9 */
+  bottom: 0;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2.75rem;
+  width: 100%;
+}
+/* line 192, ../sass/_modules.scss */
+.feature-short .feature-short_link a {
+  color: white;
+  margin: auto 0;
+}
+
+/* line 201, ../sass/_modules.scss */
 .feature-wide {
+  width: 100%;
   margin-top: 30px;
 }
 
-/* line 134, ../sass/_modules.scss */
+/* line 206, ../sass/_modules.scss */
 .site-footer {
   background: #dedadb;
   float: left;
   margin-top: 8rem;
   width: 100%;
 }
-/* line 140, ../sass/_modules.scss */
+/* line 212, ../sass/_modules.scss */
 .site-footer .logo-contain {
   border-top: 3px solid #cea35f;
   display: block;
   margin: 0 auto;
   position: relative;
-  width: 20%;
   top: -45px;
+  width: 20%;
 }
-/* line 148, ../sass/_modules.scss */
+/* line 220, ../sass/_modules.scss */
 .site-footer .logo-contain .logo {
   border: 10px solid white;
   display: block;
   margin: 0 auto;
   width: auto;
 }
-/* line 155, ../sass/_modules.scss */
+/* line 228, ../sass/_modules.scss */
 .site-footer .site-nav {
   display: block;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
 }
-/* line 160, ../sass/_modules.scss */
+/* line 233, ../sass/_modules.scss */
 .site-footer .site-nav ul {
   width: 100%;
 }
-/* line 163, ../sass/_modules.scss */
+/* line 236, ../sass/_modules.scss */
 .site-footer .site-nav ul li {
   width: 20%;
 }
@@ -264,32 +344,41 @@ body {
 /* Small **********************************************************/
 /* Medium *********************************************************/
 @media screen and (min-width: 992px) {
-  /* line 10, ../sass/_state.scss */
+  /* line 11, ../sass/_state.scss */
   .feature {
     padding-right: 0;
   }
 
-  /* line 14, ../sass/_state.scss */
+  /* line 15, ../sass/_state.scss */
   .feature-sidebar {
     padding-left: 0;
   }
 
-  /* line 18, ../sass/_state.scss */
+  /* line 19, ../sass/_state.scss */
   .feature-tall {
-    height: 99rem;
+    height: 103rem;
   }
 
-  /* line 22, ../sass/_state.scss */
+  /* line 23, ../sass/_state.scss */
   .feature-short {
-    height: 48rem;
+    height: 50rem;
   }
-
   /* line 26, ../sass/_state.scss */
-  .feature-wide {
-    height: 48rem;
+  .feature-short .feature-short_image {
+    height: 35%;
+  }
+  /* line 29, ../sass/_state.scss */
+  .feature-short .feature-short_link {
+    position: absolute;
+    height: 12%;
   }
 
-  /* line 30, ../sass/_state.scss */
+  /* line 35, ../sass/_state.scss */
+  .feature-wide {
+    height: 50rem;
+  }
+
+  /* line 39, ../sass/_state.scss */
   .site-footer {
     height: 24rem;
   }
@@ -298,7 +387,7 @@ body {
 /* line 20, ../sass/theme.scss */
 .design-credit {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 9999;
 }

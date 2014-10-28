@@ -12,14 +12,14 @@ $gold: #cea35f;
 
 
 // Imports
-@import "base"; // Defaults
-@import "modules"; // Structure of blocks
-@import "layout"; // Where the blocks are placed
-@import "state"; // What the blocks look like in different states
+@import 'base'; // Defaults
+@import 'modules'; // Structure of blocks
+@import 'layout'; // Where the blocks are placed
+@import 'state'; // What the blocks look like in different states
 
 .design-credit {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 9999;
 }

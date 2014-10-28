@@ -7,6 +7,7 @@
 
 /* Medium *********************************************************/
 @media screen and (min-width: $break-medium) {
+
   .feature {
     padding-right: 0;
   }
@@ -16,15 +17,23 @@
   }
 
   .feature-tall {
-    height: 99rem; // magic numbery to account for gutters
+    height: 103rem; // magic numbery to account for gutters
   }
 
   .feature-short {
-    height: 48rem;
+    height: 50rem;
+
+    .feature-short_image {
+      height: 35%;
+    }
+    .feature-short_link {
+      position: absolute;
+      height: 12%;
+    }
   }
 
   .feature-wide {
-    height: 48rem;
+    height: 50rem;
   }
   
   .site-footer {
